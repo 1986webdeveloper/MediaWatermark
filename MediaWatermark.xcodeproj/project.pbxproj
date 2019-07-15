@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8F7C48D22DCA2A50032738B /* MediaWatermark.h in Headers */ = {isa = PBXBuildFile; fileRef = C8F7C48B22DCA2A50032738B /* MediaWatermark.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8F7C4AA22DCA5110032738B /* GraphicContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C49622DCA5110032738B /* GraphicContext.swift */; };
+		C8F7C4AB22DCA5110032738B /* FilterProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C49722DCA5110032738B /* FilterProcessor.swift */; };
+		C8F7C4AC22DCA5110032738B /* MediaFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C49822DCA5110032738B /* MediaFilter.swift */; };
+		C8F7C4AD22DCA5110032738B /* FilterShaderParamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C49A22DCA5110032738B /* FilterShaderParamManager.swift */; };
+		C8F7C4AE22DCA5110032738B /* ColorFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C49B22DCA5110032738B /* ColorFilter.swift */; };
+		C8F7C4AF22DCA5110032738B /* FilterShaderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C49C22DCA5110032738B /* FilterShaderProvider.swift */; };
+		C8F7C4B022DCA5110032738B /* BlurFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C49D22DCA5110032738B /* BlurFilter.swift */; };
+		C8F7C4B122DCA5110032738B /* SobelFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C49E22DCA5110032738B /* SobelFilter.swift */; };
+		C8F7C4B222DCA5110032738B /* ThresholdFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C49F22DCA5110032738B /* ThresholdFilter.swift */; };
+		C8F7C4B322DCA5110032738B /* SepiaFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C4A022DCA5110032738B /* SepiaFilter.swift */; };
+		C8F7C4B422DCA5110032738B /* MediaImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C4A222DCA5110032738B /* MediaImageProcessor.swift */; };
+		C8F7C4B522DCA5110032738B /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C4A322DCA5110032738B /* MediaItem.swift */; };
+		C8F7C4B622DCA5110032738B /* MediaProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C4A422DCA5110032738B /* MediaProcessor.swift */; };
+		C8F7C4B722DCA5110032738B /* MediaElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C4A522DCA5110032738B /* MediaElement.swift */; };
+		C8F7C4B822DCA5110032738B /* MediaVideoProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C4A622DCA5110032738B /* MediaVideoProcessor.swift */; };
+		C8F7C4B922DCA5110032738B /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C4A822DCA5110032738B /* Assets.swift */; };
+		C8F7C4BA22DCA5110032738B /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7C4A922DCA5110032738B /* Images.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C8F7C48822DCA2A50032738B /* MediaWatermark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MediaWatermark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F7C48B22DCA2A50032738B /* MediaWatermark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaWatermark.h; sourceTree = "<group>"; };
+		C8F7C48C22DCA2A50032738B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F7C49622DCA5110032738B /* GraphicContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicContext.swift; sourceTree = "<group>"; };
+		C8F7C49722DCA5110032738B /* FilterProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterProcessor.swift; sourceTree = "<group>"; };
+		C8F7C49822DCA5110032738B /* MediaFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaFilter.swift; sourceTree = "<group>"; };
+		C8F7C49A22DCA5110032738B /* FilterShaderParamManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterShaderParamManager.swift; sourceTree = "<group>"; };
+		C8F7C49B22DCA5110032738B /* ColorFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFilter.swift; sourceTree = "<group>"; };
+		C8F7C49C22DCA5110032738B /* FilterShaderProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterShaderProvider.swift; sourceTree = "<group>"; };
+		C8F7C49D22DCA5110032738B /* BlurFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurFilter.swift; sourceTree = "<group>"; };
+		C8F7C49E22DCA5110032738B /* SobelFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobelFilter.swift; sourceTree = "<group>"; };
+		C8F7C49F22DCA5110032738B /* ThresholdFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThresholdFilter.swift; sourceTree = "<group>"; };
+		C8F7C4A022DCA5110032738B /* SepiaFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SepiaFilter.swift; sourceTree = "<group>"; };
+		C8F7C4A222DCA5110032738B /* MediaImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaImageProcessor.swift; sourceTree = "<group>"; };
+		C8F7C4A322DCA5110032738B /* MediaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		C8F7C4A422DCA5110032738B /* MediaProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaProcessor.swift; sourceTree = "<group>"; };
+		C8F7C4A522DCA5110032738B /* MediaElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaElement.swift; sourceTree = "<group>"; };
+		C8F7C4A622DCA5110032738B /* MediaVideoProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaVideoProcessor.swift; sourceTree = "<group>"; };
+		C8F7C4A822DCA5110032738B /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		C8F7C4A922DCA5110032738B /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8F7C48522DCA2A50032738B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8F7C47E22DCA2A50032738B = {
+			isa = PBXGroup;
+			children = (
+				C8F7C48A22DCA2A50032738B /* MediaWatermark */,
+				C8F7C48922DCA2A50032738B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8F7C48922DCA2A50032738B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8F7C48822DCA2A50032738B /* MediaWatermark.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8F7C48A22DCA2A50032738B /* MediaWatermark */ = {
+			isa = PBXGroup;
+			children = (
+				C8F7C49422DCA5110032738B /* Classes */,
+				C8F7C48B22DCA2A50032738B /* MediaWatermark.h */,
+				C8F7C48C22DCA2A50032738B /* Info.plist */,
+			);
+			path = MediaWatermark;
+			sourceTree = "<group>";
+		};
+		C8F7C49422DCA5110032738B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C8F7C49522DCA5110032738B /* Filters */,
+				C8F7C4A122DCA5110032738B /* Core */,
+				C8F7C4A722DCA5110032738B /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C8F7C49522DCA5110032738B /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				C8F7C49622DCA5110032738B /* GraphicContext.swift */,
+				C8F7C49722DCA5110032738B /* FilterProcessor.swift */,
+				C8F7C49822DCA5110032738B /* MediaFilter.swift */,
+				C8F7C49922DCA5110032738B /* Effects */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		C8F7C49922DCA5110032738B /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				C8F7C49A22DCA5110032738B /* FilterShaderParamManager.swift */,
+				C8F7C49B22DCA5110032738B /* ColorFilter.swift */,
+				C8F7C49C22DCA5110032738B /* FilterShaderProvider.swift */,
+				C8F7C49D22DCA5110032738B /* BlurFilter.swift */,
+				C8F7C49E22DCA5110032738B /* SobelFilter.swift */,
+				C8F7C49F22DCA5110032738B /* ThresholdFilter.swift */,
+				C8F7C4A022DCA5110032738B /* SepiaFilter.swift */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		C8F7C4A122DCA5110032738B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C8F7C4A222DCA5110032738B /* MediaImageProcessor.swift */,
+				C8F7C4A322DCA5110032738B /* MediaItem.swift */,
+				C8F7C4A422DCA5110032738B /* MediaProcessor.swift */,
+				C8F7C4A522DCA5110032738B /* MediaElement.swift */,
+				C8F7C4A622DCA5110032738B /* MediaVideoProcessor.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C8F7C4A722DCA5110032738B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C8F7C4A822DCA5110032738B /* Assets.swift */,
+				C8F7C4A922DCA5110032738B /* Images.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C8F7C48322DCA2A50032738B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F7C48D22DCA2A50032738B /* MediaWatermark.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C8F7C48722DCA2A50032738B /* MediaWatermark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8F7C49022DCA2A50032738B /* Build configuration list for PBXNativeTarget "MediaWatermark" */;
+			buildPhases = (
+				C8F7C48322DCA2A50032738B /* Headers */,
+				C8F7C48422DCA2A50032738B /* Sources */,
+				C8F7C48522DCA2A50032738B /* Frameworks */,
+				C8F7C48622DCA2A50032738B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediaWatermark;
+			productName = MediaWatermark;
+			productReference = C8F7C48822DCA2A50032738B /* MediaWatermark.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8F7C47F22DCA2A50032738B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = AGC;
+				TargetAttributes = {
+					C8F7C48722DCA2A50032738B = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = C8F7C48222DCA2A50032738B /* Build configuration list for PBXProject "MediaWatermark" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C8F7C47E22DCA2A50032738B;
+			productRefGroup = C8F7C48922DCA2A50032738B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8F7C48722DCA2A50032738B /* MediaWatermark */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8F7C48622DCA2A50032738B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8F7C48422DCA2A50032738B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F7C4B422DCA5110032738B /* MediaImageProcessor.swift in Sources */,
+				C8F7C4AB22DCA5110032738B /* FilterProcessor.swift in Sources */,
+				C8F7C4AF22DCA5110032738B /* FilterShaderProvider.swift in Sources */,
+				C8F7C4BA22DCA5110032738B /* Images.swift in Sources */,
+				C8F7C4AE22DCA5110032738B /* ColorFilter.swift in Sources */,
+				C8F7C4B222DCA5110032738B /* ThresholdFilter.swift in Sources */,
+				C8F7C4B622DCA5110032738B /* MediaProcessor.swift in Sources */,
+				C8F7C4B522DCA5110032738B /* MediaItem.swift in Sources */,
+				C8F7C4AC22DCA5110032738B /* MediaFilter.swift in Sources */,
+				C8F7C4AD22DCA5110032738B /* FilterShaderParamManager.swift in Sources */,
+				C8F7C4AA22DCA5110032738B /* GraphicContext.swift in Sources */,
+				C8F7C4B922DCA5110032738B /* Assets.swift in Sources */,
+				C8F7C4B022DCA5110032738B /* BlurFilter.swift in Sources */,
+				C8F7C4B722DCA5110032738B /* MediaElement.swift in Sources */,
+				C8F7C4B322DCA5110032738B /* SepiaFilter.swift in Sources */,
+				C8F7C4B822DCA5110032738B /* MediaVideoProcessor.swift in Sources */,
+				C8F7C4B122DCA5110032738B /* SobelFilter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C8F7C48E22DCA2A50032738B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C8F7C48F22DCA2A50032738B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C8F7C49122DCA2A50032738B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7ZDY2V8AH3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MediaWatermark/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acquaint.MediaWatermark;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8F7C49222DCA2A50032738B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7ZDY2V8AH3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MediaWatermark/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acquaint.MediaWatermark;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8F7C48222DCA2A50032738B /* Build configuration list for PBXProject "MediaWatermark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F7C48E22DCA2A50032738B /* Debug */,
+				C8F7C48F22DCA2A50032738B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8F7C49022DCA2A50032738B /* Build configuration list for PBXNativeTarget "MediaWatermark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F7C49122DCA2A50032738B /* Debug */,
+				C8F7C49222DCA2A50032738B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8F7C47F22DCA2A50032738B /* Project object */;
+}
